@@ -1,0 +1,166 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	font-family: 'Raleway', sans-serif;
+}
+
+p {
+	font-weight: 400;
+	font-size: 0.8rem;
+}
+
+h2 {
+	font-size: 1.3rem;
+}
+
+div.header-container {
+	background-color: whitesmoke;
+	border-bottom: 2px solid #e6e6e6;
+	margin-bottom: 5rem;
+}
+
+.sticky {
+	position: fixed;
+	width: 100%;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	height: 5rem;
+	align-items: center;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+.content {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	justify-content: space-between;
+}
+
+.main-content {
+	width: 70%;
+	margin-right: 3rem;
+	margin-bottom: 8rem;
+}
+
+.side-bar {
+	width: 30%;
+}
+
+.article-head,
+.article-head h1 {
+	margin-bottom: 0.5rem;
+}
+.article-wrapper {
+	margin-bottom: 2rem;
+	padding-bottom: 2rem;
+	border-bottom: 2px solid #e6e6e6;
+}
+
+.side-bar-info {
+	margin-bottom: 1rem;
+}
+
+.sidebars {
+	border: 2px solid #e6e6e6;
+	padding: 1rem;
+}
+
+.signup {
+	border: 2px solid #e6e6e6;
+	padding: 20px;
+	margin-top: 4rem;
+}
+
+.signup p {
+	max-width: 100%;
+	margin-bottom: 25px;
+}
+
+.newsletter {
+	width: 70%;
+}
+.form-picture {
+	position: relative;
+	z-index: 1;
+	width: 50%;
+	bottom: 100px;
+	display: inline;
+	float: right;
+}
+
+.form-fields {
+	display: flex;
+}
+
+.signup h2 {
+	margin-bottom: 1rem;
+}
+.signup input {
+	height: 40px;
+	border-radius: 3px;
+	background-color: #e6e6e6;
+	padding: 0 10px;
+	margin: 2px 5px;
+	border: none;
+	width: 100%;
+}
+
+.signup input[type=submit] {
+	background-color: #ffdb3a;
+	font-size: 1rem;
+	font-weight: 600;
+	box-shadow: 0 1px 3px 0 rgb(0 0 0 / 17%);
+	cursor: pointer;
+	z-index: 1;
+	width: 100%;
+}
+
+.signup input[type=text]:focus {
+	border: 2px solid #ffdb3a;
+}
+
+@media (max-width: 700px) {
+	.content {
+		flex-direction: column;
+	}
+	.main-content {
+		width: 100%;
+		margin-bottom: 2rem;
+	}
+	.side-bar {
+		width: 100%;
+		margin-bottom: 3rem;
+	}
+}
+
+@media (min-width: 900px) {
+	.form-picture {
+		position: relative;
+		z-index: 1;
+		width: 45%;
+		bottom: 110px;
+		float: right;
+	}
+}
+
+@media (max-width: 700px) {
+	.newsletter {
+		width: 100%;
+	}
+	.form-fields {
+		flex-direction: column;
+	}
+	.signup p {
+		max-width: 100%;
+	}
+}
